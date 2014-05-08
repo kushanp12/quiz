@@ -1,0 +1,178 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+
+}
+
+p, .question, .header {
+	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+}
+
+#transition, #end {
+	width: 600px;
+	height: 400px;
+
+	background-color: #00CC33;
+
+	text-align: center;
+	font-size: 40px;
+	color: white;
+
+	position: absolute;
+	left: 400px;
+	top: 150px;
+
+	display: none;
+
+	border-radius: 10px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.count {
+	min-width: 100px;
+
+	background-color: #00CC33;
+
+}
+
+body {
+	
+	background-color: #707070;
+
+
+}
+
+
+#logo {
+	background: url('https://dl.dropboxusercontent.com/u/263968982/1195000547384182986tv_opt.png');
+	background-repeat: no-repeat;
+
+	width: 216px;
+	height: 210px;
+
+	margin: auto;
+	margin-top: 150px;
+	margin-left: 570px;
+}
+
+#arrow{
+	background: url('https://dl.dropboxusercontent.com/u/263968982/rsz_embedded-blue-arrow-point-up-left-md.png');
+	background-repeat: no-repeat;
+
+	width: 142px;
+	height: 139px;
+
+	position: absolute;
+	top: 100px;
+	left: 80px;
+}
+
+#contain, #one, #two, #three, #four, #five {
+	color: black;
+
+	font-size: 20px;
+	font-family: impact;
+
+	margin-top: 50px;
+	text-align: center;
+
+	width: 1350px;
+}
+
+
+#button, #a, #b, #c, #d, #e {
+	position: relative;
+
+	margin: auto;
+	margin-top: 30px;
+	margin-left: 0px;
+
+
+	padding: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+
+	width: 150px;
+}
+
+#button {
+	border: none;
+
+	background-color: #FF6633;
+
+	color: #F0F0F0;
+}
+
+#one, #two, #three, #four, #five, #new, #arrow {
+	display: none;
+
+}
+
+#new {
+	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+
+	border: none;
+
+	background-color: #FF6633;
+
+	color: #F0F0F0;
+
+	font-size: 18px;
+
+	margin-top: 40px;
+	margin-left: 20px;
+
+	height: 34px;
+}
+
+#a:hover, #b:hover, #c:hover, #d:hover, #e:hover {
+	background-color: #CC33FF;
+}
+
+#button:hover, #new:hover {
+	background-color: #FF6633;
+
+	color: gold;
+
+	border: none;
+}
+
+ul, #options {
+	list-style-type: none;
+	
+	position: relative;
+
+	text-align: center;
+
+	display: none;
+
+
+}
+
+li {
+	display: inline-block;
+
+	font-size: 14px;
+
+	margin: 60px;
+
+}
+
+#a, #b, #c, #d, #e {
+	border-radius: 1000px;
+
+	height: 40px;
+	width: 200px;
+
+	background-color: #3366FF;
+	color: white;
+
+	text-align: center;
+}

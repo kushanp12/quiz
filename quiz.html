@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FRIENDS Quiz</title>
+
+	<meta charset="utf-8"/>
+		
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="quiz.css">
+
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+
+	<div id='transition'><p class='count'>Question <span id='count'>0</span> of 5</p></div>
+	<div id = 'end'><p class='count'>You need to watch more TV!<br> 0 right.</br></p></div>
+	<div id = 'arrow'></div>
+	<button id = 'new' class= 'new'>Replay Quiz</button>
+	<header>
+		<div id='logo' class = 'logo'></div>
+	</header>
+	<section>
+		<div id='contain' class='contain'>
+			<p class='header'>This is a quiz to test your knowledge about one of the most famous sitcoms in our TV Industry's history!</p>
+
+			<button id='button' class = 'button'><strong>Let's Get Started!</strong></button>
+		</div>
+		<article id='one'>
+			<p id = 'q1' class='question'>The cast was making $1 million per episode in their last season in this show.</p>
+		</article>
+		<article id='two'>
+			<p id = 'q2' class='question'>Which show is set in Point Place, WI?</p>
+		</article>
+		<article id='three'>
+			<p id = 'q3' class='question'>Paper plays an important role in this show.</p>
+			</article>
+		<article id='four'>
+			<p id = 'q4'class='question'>Stephen Hawking made a guest apperance on an episode in this show.</p>
+		</article>
+		<article id='five'>
+			<p id = 'q5'class='question'>A "Douchebag Jar" acts as a "Swear Jar" in this show.</p>
+		</article>
+
+		<ul id='options'>
+			<li id='a' name = 'friends'><strong>Friends</strong></li>
+			<li id='b' name= 'elr'><strong>New Girl</strong></li>
+			<li id='c' name = 'seven'><strong>That 70's Show</strong></li>
+			<li id='d' name = 'tbbt'><strong>The Big Bang Theory</strong></li>
+			<li id='e' name = 'to'><strong>The Office</strong></li>
+		</ul>
+	</section>
+	<audio id="applause" src="sound/applause-2.mp3">
+	<audio id="laughter" src="sound/laughter-2.mp3">
+</body>
+</html>
