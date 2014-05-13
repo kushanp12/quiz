@@ -153,7 +153,8 @@ function results(){
 
 
 
-	$('li').click(function(){
+	$('li').click(function(e){
+		e.preventDefault();
 		$(this).addClass('selected');
 		$('#options').hide();
 		$('#transition').hide().css('opacity', '1');
