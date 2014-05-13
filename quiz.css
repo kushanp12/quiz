@@ -64,7 +64,7 @@ body {
 	background: url('https://dl.dropboxusercontent.com/u/263968982/rsz_embedded-blue-arrow-point-up-left-md.png');
 	background-repeat: no-repeat;
 
-	width: 142px;
+	min-width: 142px;
 	height: 139px;
 
 	position: absolute;
