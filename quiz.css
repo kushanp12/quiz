@@ -11,7 +11,7 @@ p, .question, .header {
 }
 
 #transition, #end {
-	width: 600px;
+	min-width: 600px;
 	height: 400px;
 
 	background-color: #00CC33;
@@ -52,7 +52,7 @@ body {
 	background: url('https://dl.dropboxusercontent.com/u/263968982/1195000547384182986tv_opt.png');
 	background-repeat: no-repeat;
 
-	width: 216px;
+	min-width: 216px;
 	height: 210px;
 
 	margin: auto;
@@ -81,7 +81,7 @@ body {
 	margin-top: 50px;
 	text-align: center;
 
-	width: 1350px;
+	min-width: 1350px;
 }
 
 
@@ -99,7 +99,7 @@ body {
 	box-sizing: border-box;
 
 
-	width: 150px;
+	min-width: 150px;
 }
 
 #button {

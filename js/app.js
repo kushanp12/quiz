@@ -158,7 +158,7 @@ function results(){
 		$('#options').hide();
 		$('#transition').hide().css('opacity', '1');
 		var question = $('.question')[0].parentElement.id;
-		var answer = $('.selected')[0].getAttribute('name');
+		var answer = $('.selected')[0].getAttribute('value');
 		transition();
 		selection(question, answer);
 		$('li').removeClass('selected');
