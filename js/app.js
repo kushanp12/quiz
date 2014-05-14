@@ -169,7 +169,7 @@ function endQuiz(){
 	$('#five').hide();
 	$('#logo').hide();
 	$('#options').hide();
-	$('li').remove();
+	$('li').hide();
 	$('#end').show();
 	$('#new').delay(800).fadeIn('slow');
 	$('#arrow').delay(800).fadeIn('slow');
