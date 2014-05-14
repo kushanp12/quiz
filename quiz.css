@@ -11,6 +11,8 @@ p, .question, .header {
 }
 
 #transition, #end {
+	margin: auto;
+
 	min-width: 600px;
 	height: 400px;
 
@@ -82,7 +84,9 @@ body {
 	margin-top: 50px;
 	text-align: center;
 
-	min-width: 1350px;
+	min-width: 1333px;
+
+	margin: auto;
 }
 
 
@@ -157,7 +161,7 @@ ul, #options {
 
 	min-width: 1333px;
 
-
+	margin: auto;
 }
 
 li {
@@ -165,7 +169,7 @@ li {
 
 	font-size: 14px;
 
-	margin: 60px;
+	margin: auto;
 
 }
 
