@@ -11,7 +11,6 @@ p, .question, .header {
 }
 
 #transition, #end {
-	margin: auto;
 
 	min-width: 600px;
 	height: 400px;
@@ -58,7 +57,6 @@ body {
 	min-width: 216px;
 	height: 210px;
 
-	margin: auto;
 	margin-top: 150px;
 	margin-left: 570px;
 }
