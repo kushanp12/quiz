@@ -14,7 +14,11 @@ p, .question, .header {
 #transition, #end {
 
 	position: absolute;
-	left: 25%;
+	left: 0;
+	right: 0;
+
+	margin-left: auto;
+	margin-right: auto;
 
 	width: 600px;
 	height: 400px;
