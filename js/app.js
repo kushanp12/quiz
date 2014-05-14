@@ -15,23 +15,23 @@ function newQuestion(){
 		numOfGuesses += 1;
 		$('#count').html(numOfGuesses);
 		if (numOfGuesses == 1) {
-			$('#one').fadeIn(3200);
+			$('#one').fadeIn(3900);
 		}
 		else if (numOfGuesses == 2) {
 			$('#one').hide();
-			$('#two').fadeIn(3200);
+			$('#two').fadeIn(3900);
 		}
 		else if (numOfGuesses == 3) {
 			$('#two').hide();
-			$('#three').fadeIn(3200);
+			$('#three').fadeIn(3900);
 		}
 		else if (numOfGuesses == 4) {
 			$('#three').hide();
-			$('#four').fadeIn(3200);
+			$('#four').fadeIn(3900);
 		}
 		else if (numOfGuesses == 5) {
 			$('#four').hide();
-			$('#five').fadeIn(3200);
+			$('#five').fadeIn(3900);
 		}
 		else if (numOfGuesses >= 6){
 			$('#transition').hide();
@@ -48,7 +48,7 @@ function transition(){
 			$('#transition').remove();
 		};
 
-		$('#transition').slideToggle()
+		$('#transition').slideToggle('slow')
 		.animate(
 			{opacity: 0}
 		);
