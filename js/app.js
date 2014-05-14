@@ -36,6 +36,7 @@ function newQuestion(){
 		else if (numOfGuesses >= 6){
 			$('#transition').hide();
 			endQuiz();
+			return false;
 		};
 }
 
