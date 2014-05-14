@@ -153,7 +153,7 @@ function results(){
 
 
 
-	$('li').click(function(e){
+	$('li').click(function (e){
 		e.preventDefault();
 		$(this).addClass('selected');
 		$('#options').hide();
