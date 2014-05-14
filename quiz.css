@@ -12,7 +12,12 @@ p, .question, .header {
 
 #transition, #end {
 
-	min-width: 600px;
+	margin: auto;
+
+	position: absolute;
+	left: 400px;
+
+	width: 600px;
 	height: 400px;
 
 	background-color: #00CC33;
@@ -20,10 +25,6 @@ p, .question, .header {
 	text-align: center;
 	font-size: 40px;
 	color: white;
-
-	position: absolute;
-	left: 400px;
-	top: 150px;
 
 	display: none;
 
@@ -50,7 +51,7 @@ body {
 }
 
 
-div#logo {
+#logo {
 	background: url('https://dl.dropboxusercontent.com/u/263968982/1195000547384182986tv_opt.png');
 	background-repeat: no-repeat;
 	

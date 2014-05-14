@@ -155,7 +155,7 @@ function results(){
 
 	$('li').click(function (e){
 		e.preventDefault();
-		$(this).addClass('selected');
+		$('li').addClass('selected');
 		$('#options').hide();
 		$('#transition').hide().css('opacity', '1');
 		var question = $('.question')[0].parentElement.id;
