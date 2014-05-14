@@ -50,15 +50,17 @@ body {
 }
 
 
-#logo {
+div#logo {
 	background: url('https://dl.dropboxusercontent.com/u/263968982/1195000547384182986tv_opt.png');
 	background-repeat: no-repeat;
+	
 
-	min-width: 216px;
-	height: 210px;
+	width: 216px;
+	min-height: 210px;
 
+	margin: auto;
 	margin-top: 150px;
-	margin-left: 565px;
+
 }
 
 #arrow{
@@ -158,6 +160,10 @@ ul, #options {
 	display: none;
 
 	min-width: 1333px;
+}
+
+section {
+	min-width: 1340px;
 }
 
 li {
