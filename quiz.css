@@ -6,12 +6,12 @@
 
 }
 
+
 p, .question, .header {
 	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
 }
 
 #transition, #end {
-
 	margin: auto;
 
 	position: absolute;
@@ -47,6 +47,7 @@ body {
 	background-color: #808080;
 
 	min-width: 1350px;
+	height: 410px;
 
 }
 

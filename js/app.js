@@ -48,14 +48,9 @@ function transition(){
 			$('#transition').remove();
 		};
 
-		$('#transition').finish().slideToggle()
+		$('#transition').slideToggle()
 		.animate(
-			{opacity: 0, left: '+=600px'}, 
-			900,
-			function(){
-				$(this).hide();
-				$(this).css('left', '400px');
-			}
+			{opacity: 0}
 		);
 		
 		$('#logo').delay(800).show();
