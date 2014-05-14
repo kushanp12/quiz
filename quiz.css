@@ -14,8 +14,7 @@ p, .question, .header {
 #transition, #end {
 
 	position: absolute;
-	left: 50%;
-	right: 50%;
+	left: 25%;
 
 	width: 600px;
 	height: 400px;
@@ -45,9 +44,6 @@ p, .question, .header {
 body {
 	
 	background-color: #808080;
-
-	min-width: 1000px;
-	height: 410px;
 
 }
 
