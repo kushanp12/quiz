@@ -1,5 +1,5 @@
 
-#yo {
+#score {
 	position: relative;
 
 }
@@ -10,17 +10,11 @@ p, .question, .header {
 
 #transition, #end {
 
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-
 	position: absolute;
 	left: 0;
 	right: 0;
 
 	margin: auto;
-	margin-left: auto;
-	margin-right: auto;
 
 	width: 600px;
 	height: 400px;
@@ -76,8 +70,8 @@ body {
 	height: 139px;
 
 	position: absolute;
-	top: 14%;
-	left: 9%;
+	top: 100px;
+	left: 110px;
 }
 
 #contain, #one, #two, #three, #four, #five {
@@ -137,8 +131,8 @@ body {
 	font-size: 18px;
 
 	position: absolute;
-	top: 5%;
-	left: 5%;
+	top: 40px;
+	left: 40px;
 
 	height: 34px;
 }
