@@ -15,23 +15,23 @@ function newQuestion(){
 		numOfGuesses += 1;
 		$('#count').html(numOfGuesses);
 		if (numOfGuesses == 1) {
-			$('#one').delay(800).fadeIn(3600);
+			$('#one').delay(800).fadeIn('slow');
 		}
 		else if (numOfGuesses == 2) {
 			$('#one').hide();
-			$('#two').delay(800).fadeIn(3600);
+			$('#two').delay(800).fadeIn('slow');
 		}
 		else if (numOfGuesses == 3) {
 			$('#two').hide();
-			$('#three').delay(800).fadeIn(3600);
+			$('#three').delay(800).fadeIn('slow');
 		}
 		else if (numOfGuesses == 4) {
 			$('#three').hide();
-			$('#four').delay(800).fadeIn(3600);
+			$('#four').delay(800).fadeIn('slow');
 		}
 		else if (numOfGuesses == 5) {
 			$('#four').hide();
-			$('#five').delay(800).fadeIn(3600);
+			$('#five').delay(800).fadeIn('slow');
 		}
 		else if (numOfGuesses >= 6){
 			$('#transition').hide();
