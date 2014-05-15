@@ -106,7 +106,7 @@ function selection(q, a){
 		results();
 		$('#q5').remove();
 	}
-	else if (q == 'five' && a != 'tbbt') {
+	else if (q == 'five' && a != 'elr') {
 		console.log(correct);
 		results();
 		playLaughter();
@@ -148,13 +148,12 @@ function results(){
 
 
 
-	$('li').click(function (e){
-		e.preventDefault();
-		$('li').addClass('selected');
+	$('li').click(function(){
+		$(this).addClass('selected');
 		$('#options').hide();
 		$('#transition').hide().css('opacity', '1');
 		var question = $('.question')[0].parentElement.id;
-		var answer = $('.selected')[0].getAttribute('value');
+		var answer = $('.selected')[0].getAttribute('name');
 		transition();
 		selection(question, answer);
 		$('li').removeClass('selected');
