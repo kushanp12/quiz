@@ -2,6 +2,9 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
+	outline: 1px black solid;
+
 }
 
 
@@ -43,9 +46,20 @@ p, .question, .header {
 
 }
 
+html{
+	min-width: 1250px;
+}
+
 body {
 	
 	background-color: #808080;
+	width: 1000px;
+
+	margin: auto;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 
 }
 
