@@ -16,22 +16,31 @@ function newQuestion(){
 		$('#count').html(numOfGuesses);
 		if (numOfGuesses == 1) {
 			$('#one').delay(800).fadeIn('slow');
+			$('#options-one').delay(800).fadeIn('slow');
 		}
 		else if (numOfGuesses == 2) {
 			$('#one').hide();
+			$('#options-one').hide();
 			$('#two').delay(800).fadeIn('slow');
+			$('#options-two').delay(800).fadeIn('slow');
 		}
 		else if (numOfGuesses == 3) {
 			$('#two').hide();
+			$('#options-two').hide();
 			$('#three').delay(800).fadeIn('slow');
+			$('#options-three').delay(800).fadeIn('slow');
 		}
 		else if (numOfGuesses == 4) {
 			$('#three').hide();
+			$('#options-three').hide();
 			$('#four').delay(800).fadeIn('slow');
+			$('#options-four').delay(800).fadeIn('slow');
 		}
 		else if (numOfGuesses == 5) {
 			$('#four').hide();
+			$('#options-four').hide();
 			$('#five').delay(800).fadeIn('slow');
+			$('#options-five').delay(800).fadeIn('slow');
 		}
 		else if (numOfGuesses >= 6){
 			$('#transition').hide();

@@ -149,13 +149,17 @@ body {
 	border: none;
 }
 
-ul, #options {
+ul, #options-one, #options-two {
 	list-style-type: none;
 	
 	position: relative;
 
 	text-align: center;
 
+	display: none;
+}
+
+#options-two, #options-three, #options-four, #options-five{
 	display: none;
 }
 
