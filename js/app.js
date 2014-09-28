@@ -1,16 +1,16 @@
 $(document).ready(function(){
+	/* When #button gets clicked, #contain gets hidden and the function transition takes place */
 	$('#button').mousedown(function(){
 		$('#contain').hide();
 		transition();
 	});
 
-var numOfGuesses = 0;
+var numOfGuesses = 0; /* Sets the number of guesses to 0. This gets added to #count which displays what number question the user is currently on */
 var previousQ = null;
-var questions = document.getElementsByTagName('article');
-var correct = [];
+var questions = document.getElementsByTagName('article'); /* Finds the <article> tag within the DOM */
+var correct = []; /* An empty array that will be appended with the number of correct answers */
 
-//PUT QUESTIONS INTO AN ARRAY//
-
+// Displays a question set and a option set according to the number of guesses // 
 function newQuestion(){
 		numOfGuesses += 1;
 		$('#count').html(numOfGuesses);
@@ -43,11 +43,12 @@ function newQuestion(){
 			$('#options-five').delay(800).fadeIn('slow');
 		}
 		else if (numOfGuesses >= 6){
-			$('#transition').hide();
-			endQuiz();
+			$('#transition').hide(); // Hides the Transition element//
+			endQuiz(); //Calls the endQuiz funtion which will display the user's final result //
 		};
 }
 
+// This function handles the #transition and calls the newQuestion function//
 function transition(){
 		$('#logo').hide();
 
@@ -57,6 +58,7 @@ function transition(){
 			$('#transition').remove();
 		};
 
+		// Animates #transition after displaying the question number to the user //
 		$('#transition').slideToggle('slow')
 		.animate(
 			{opacity: 0}
@@ -70,8 +72,7 @@ function selection(q, a){
 
 	if (q == 'one' && a == 'friends') {
 			console.log('Right');
-			correct.push(1);
-			console.log(correct);
+			correct.push(1); // Appends to the array 'correct'//			console.log(correct);
 			$('#q1').remove();
 		}
 	else if (q == 'one' && a != 'friends') {
@@ -123,6 +124,7 @@ function selection(q, a){
 	}
 }
 
+// results() counts the length within the array 'correct' and uses that information to display to the user how many questions were answered correctly //
 function results(){
 	for (var x in correct){
 			if (correct.length == 1){
@@ -154,19 +156,16 @@ function results(){
 
 }
 
-
-
-
 	$('li').click(function (e){
 		e.preventDefault();
-		$(this).addClass('selected');
+		$(this).addClass('selected'); // Attributes a class to the 'clicked' option//
 		$('#options').hide();
 		$('#transition').hide().css('opacity', '1');
 		var question = $('.question')[0].parentElement.id;
-		var answer = $('.selected')[0].getAttribute('name');
+		var answer = $('.selected')[0].getAttribute('name'); // Gets the name attribute from the selected option //
 		transition();
 		selection(question, answer);
-		$('li').removeClass('selected');
+		$('li').removeClass('selected'); // Remeoves the class that was attributed to the option to start fresh for the new question //
 	});	
 
 function endQuiz(){
@@ -181,17 +180,19 @@ function endQuiz(){
 
 $('#new').click(function (e) {
         e.preventDefault();
-        location.reload();
+        location.reload(); // For the Replay Quiz button that reloads the entire app //
 	});
 
 });
 
+// Plays the Applause audio clip when 100% is scored//
 function playApplause(){
 	$('#applause')[0].volume = 0.5;
 	$('#applause')[0].load();
 	$('#applause')[0].play();
 }
 
+// Plays the Laugh audio clip when score is less than 100% //
 function playLaughter(){
 	$('#laughter')[0].volume = 0.5;
 	$('#laughter')[0].load();

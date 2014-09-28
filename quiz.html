@@ -2,26 +2,34 @@
 <html>
 <head>
 	<title>TV Show Quiz</title>
-
 	<meta charset="utf-8"/>
 		
-	<!-- Stylesheets -->
+	<!-- Stylesheet -->
 	<link rel="stylesheet" href="quiz.css">
 
+	<!-- Javascript/jQuery -->
 	<script src="http://code.jquery.com/jquery.min.js"></script>
-
 	<script type="text/javascript" src="js/app.js"></script>
+
 </head>
 <body>
+
 	<div id = 'score'>
+		<!-- This <div> tells the user which Question they presently are on -->
 		<div id='transition'><p class='count'>Question <span id='count'>0</span> of 5</p></div>
-		<div id = 'end'><p class='count'>You need to watch more TV!<br> 0 out of 5 right.</br></p></div>
+
+		<!-- #end displays to the user their final score of the quiz app -->
+		<div id = 'end'><p class='count'>You need to watch more TV!<br></br> 0 out of 5 right.</p></div>
 	</div>
+
+	<!-- Displays the 'TV' logo and Replay Quiz button with an arrow img pointing to it. -->
 	<header>
-	<div id = 'arrow'></div>
-	<button id = 'new' class= 'new'>Replay Quiz</button>
-	<div id='logo' class = 'logo'></div>
+		<div id = 'arrow'></div>
+		<button id = 'new' class= 'new'>Replay Quiz</button>
+		<div id='logo' class = 'logo'></div>
 	</header>
+
+	<!-- This section has the intro to the app as well as the five questions the user needs to answer -->
 	<section>
 		<div id='contain' class='contain'>
 			<p class='header'>This is a quiz to test your knowledge about one of the most famous sitcoms in our TV Industry's history!</p>
@@ -44,6 +52,7 @@
 			<p id = 'q5' class='question'>A "Douchebag Jar" acts as a "Swear Jar" in this show.</p>
 		</article>
 
+		<!-- These <ul> contain the options that changes after each submitted answer -->
 		<ul id='options-one'>
 			<li id='a' name = 'friends'><strong>Friends</strong></li>
 			<li id='b' name = 'elr'><strong>Step by Step</strong></li>
@@ -63,7 +72,7 @@
 			<li id='b' name = 'elr'><strong>The Office (UK)</strong></li>
 			<li id='c' name = 'seven'><strong>The League</strong></li>
 			<li id='d' name = 'tbbt'><strong>Men at Work</strong></li>
-			<li id='e' name = 'to'><strong>The Office</strong></li>
+			<li id='e' name = 'to'><strong>The Office (US)</strong></li>
 		</ul>
 		<ul id='options-four'>
 			<li id='a' name = 'friends'><strong>Arrow</strong></li>
@@ -80,6 +89,8 @@
 			<li id='e' name = 'to'><strong>Community</strong></li>
 		</ul>
 	</section>
+
+	<!-- Plays an applause audio clip if 100% is scored or a laugh audio clip when scored less than 100%. -->
 	<audio id="applause" src="sound/applause-2.mp3"></audio>
 	<audio id="laughter" src="sound/laughter-2.mp3"></audio>
 </body>

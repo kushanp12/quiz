@@ -1,15 +1,40 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
 
 #score {
 	position: relative;
-
 }
 
 p, .question, .header {
+	/* The font style for all the text within the app */
 	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
 }
 
 #transition, #end {
-
+	/* Positions the #transitions and #end in the center of the app, along with the color within the <div> */
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -31,10 +56,10 @@ p, .question, .header {
 }
 
 .count {
+	/* Handles the count ticker of how many questions were answered correctly */
 	min-width: 100px;
 
 	background-color: #00CC33;
-
 }
 
 
@@ -50,30 +75,35 @@ body {
 
 
 #logo {
+
+	/* Places the image in #logo */
 	background: url('https://dl.dropboxusercontent.com/u/263968982/1195000547384182986tv_opt.png');
 	background-repeat: no-repeat;
 	
-
 	width: 214px;
 	height: 210px;
 
+	/* Positions the #logo */
 	margin: auto;
 	margin-top: 150px;
 
 }
 
 #arrow{
+
 	background: url('https://dl.dropboxusercontent.com/u/263968982/rsz_embedded-blue-arrow-point-up-left-md.png');
 	background-repeat: no-repeat;
 
 	min-width: 142px;
 	height: 139px;
 
+	/* Places the arrow near the 'Replay Button' */
 	position: absolute;
 	top: 100px;
 	left: 110px;
 }
 
+/* Handles the font, size of the questions, and poitions withing the #transitions */
 #contain, #one, #two, #three, #four, #five {
 	color: black;
 
@@ -89,6 +119,7 @@ body {
 }
 
 
+/* Handles the options of each question. Where to position it and the width of each button */
 #button, #a, #b, #c, #d, #e {
 	position: relative;
 
@@ -106,6 +137,7 @@ body {
 	min-width: 150px;
 }
 
+/* Provides decoration and color for each option */
 #button {
 	border: none;
 
@@ -116,9 +148,9 @@ body {
 
 #one, #two, #three, #four, #five, #new, #arrow {
 	display: none;
-
 }
 
+/* Details the Replay Quiz button. Gives it color, handles the font-size, and positions it */
 #new {
 	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
 
@@ -149,7 +181,8 @@ body {
 	border: none;
 }
 
-ul, #options-one, #options-two {
+/* Positions the options for each question and the text within the options */
+ul, #options-one, #options-two, #options-three, #options-four, #options-five {
 	list-style-type: none;
 	
 	position: relative;
@@ -169,7 +202,7 @@ section {
 	margin: auto;
 }
 
-
+/* Places the elements withing a <li> in a line instead of a coloumn */
 li {
 	display: inline-block;
 
@@ -177,6 +210,7 @@ li {
 
 }
 
+/* Details each individual button */
 #a, #b, #c, #d, #e {
 	border-radius: 1000px;
 
